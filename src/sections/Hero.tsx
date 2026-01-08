@@ -1,22 +1,33 @@
 import IconLinks from "@/components/common/IconLinks";
+import { MapPin } from "lucide-react";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[90vh] flex items-center justify-center"
+      className="min-h-[90vh] flex items-center justify-center flex-col-reverse md:flex-row gap-3"
     >
-      <div className="text-left space-y-3 max-w-2xl">
-        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
-          Hallo! Ich bin <span className="text-primary">Dody</span>
+      <div className="text-left md:w-1/2 space-y-2 max-w-xl">
+        <p className="rounded-md bg-gray-500/10 font-medium p-2 inline-flex items-center space-x-2">
+          <MapPin className="h-4 w-4"/>
+          <span>São Paulo, Brazil</span>
+        </p>
+
+        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">
+          Hey! I'm <span className="text-primary">Dody</span> (Doddee)
         </h1>
 
-        <p className="text-lg text-muted-foreground">
-          FullStack Developer, focused on Python, TypeScript and C#
+        <p className="text-3xl text-muted-foreground">
+        FullStack Developer
         </p>
 
         <IconLinks />
       </div>
+      <img
+        className="w-1/2 md:w-1/3 rounded-4xl md:rounded-lg "
+        src="pfp.jpg"
+        alt="Profile Picture"
+      ></img>
     </section>
   );
 }
