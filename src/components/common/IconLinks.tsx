@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, FileText } from "lucide-react"
 
 type IconLink = {
   href: string
   label: string
   icon: React.ReactNode
+  download?: string
 }
 
 const links: IconLink[] = [
@@ -23,6 +24,12 @@ const links: IconLink[] = [
     label: "Email",
     icon: <Mail className="h-5 w-5" />,
   },
+  {
+    href: "/DodyCV.pdf",
+    label: "Resume",
+    icon: <FileText className="h-5 w-5" />,
+    download: "DodyCV.pdf"
+  },
 ]
 
 export default function IconLinks() {
@@ -32,14 +39,15 @@ export default function IconLinks() {
         <Button
           key={link.label}
           variant="outline"
-          size="icon"
+          size="icon-lg"
           asChild
           aria-label={link.label}
         >
           <a
             href={link.href}
             target="_blank"
-            rel="noreferrer"
+            download={link.download}
+            rel="noopener noreferrer"
           >
             {link.icon}
           </a>
