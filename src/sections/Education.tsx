@@ -36,7 +36,7 @@ const education: EducationItem[] = [
     institution: "Dom Bosco School",
     period: "2020 — 2022",
     description:
-      "ntroductory training in programming logic and web development fundamentals, including HTML, CSS, and JavaScript, with early exposure to interactive applications, basic game development, and digital media tools.",
+      "Introductory training in programming logic and web development fundamentals, including HTML, CSS, and JavaScript, with early exposure to interactive applications, basic game development, and digital media tools.",
     icon: Blocks,
   },
 ];
@@ -57,7 +57,8 @@ export function Education() {
 
           return (
             <Card key={item.id}>
-              <CardContent className="flex gap-4 px-6 py-2">
+              <CardContent className="flex items-center px-6 min-h-30">
+                <div className="flex gap-4">
                 {/* Icon */}
                 <div className="mt-1">
                   <Icon className="h-6 w-6 text-muted-foreground" />
@@ -78,6 +79,7 @@ export function Education() {
                       {item.description}
                     </p>
                   )}
+                </div>
                 </div>
               </CardContent>
             </Card>
