@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="md:min-h-[90vh] min-h-[50vh] flex items-center justify-center flex-col-reverse md:flex-row gap-3"
+      className="md:min-h-[70vh] min-h-[50vh] flex md:items-center justify-center flex-col-reverse md:flex-row gap-3"
     >
       <div className="text-left md:w-1/2 space-y-2 max-w-xl">
 
@@ -23,11 +23,11 @@ export default function Hero() {
         </p>
         <IconLinks />
       </div>
-      <img
+      {/* <img
         className="w-1/2 md:w-1/3 rounded-4xl md:rounded-lg "
         src="pfp.jpg"
         alt="Profile Picture"
-      ></img>
+      ></img> */}
     </section>
   );
 }
