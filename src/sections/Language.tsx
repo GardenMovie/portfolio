@@ -18,7 +18,7 @@ export function Language() {
         {languages.map((lang) => (
           <div key={lang.id} className="relative w-full">
             <div className="absolute inset-0 translate-x-1 translate-y-1 bg-primary rounded-xl z-0 shadow-lg" aria-hidden="true" />
-            <div className="flex items-center gap-4 px-4 py-3 bg-card rounded-md relative z-10">
+            <div className="flex items-center gap-4 px-4 py-3 bg-card rounded-md relative z-10 bg-gradient-to-br from-neutral-100 from-70% to-neutral-300">
               <span className="font-bold text-lg min-w-10 text-center">
                 {lang.level}
               </span>

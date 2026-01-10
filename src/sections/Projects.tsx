@@ -70,7 +70,7 @@ export function Projects() {
 							className="absolute inset-0 translate-x-1 translate-y-1 bg-primary rounded-xl z-0 shadow-lg transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"
 							aria-hidden="true"
 						/>
-						<div className="flex flex-col h-full bg-card rounded-xl relative z-10 overflow-hidden transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
+						<div className="flex flex-col h-full bg-card rounded-xl relative z-10 bg-gradient-to-br from-neutral-100 from-70% to-neutral-300 overflow-hidden transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
 							{/* Image area: top */}
 							<div className="min-h-1/2 w-full bg-muted flex items-center justify-center overflow-hidden">
 								<img

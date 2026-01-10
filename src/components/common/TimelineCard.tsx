@@ -10,7 +10,7 @@ export function TimelineCard({ item }: TimelineCardProps) {
   return (
     <div className="relative w-full">
       <div className="absolute inset-0 translate-x-1 translate-y-1 bg-primary rounded-xl z-0 shadow-lg" aria-hidden="true" />
-      <Card className="relative z-10">
+      <Card className="relative z-10 bg-gradient-to-br from-neutral-100 from-70% to-neutral-300">
         <CardContent className="flex items-center px-6 py-2 ">
           <div className="flex gap-4">
             {/* Icon */}
