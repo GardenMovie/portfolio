@@ -11,7 +11,7 @@ export default function App() {
       <Navbar />
       <main className="container mx-auto px-4">
         <Hero />
-        <section className="md:min-h-[90vh] min-h-[50vh] flex justify-center flex-col-reverse xl:flex-row gap-x-30 gap-y-10">
+        <section className="md:min-h-[90vh] min-h-[50vh] flex justify-center flex-col-reverse xl:flex-row gap-x-16 gap-y-10">
           {/* Left: Education + Languages, Right: Experience */}
           <div className="flex flex-col gap-10 flex-1">
             <Education />
