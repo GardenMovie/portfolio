@@ -3,8 +3,8 @@ import Navbar from "@/components/layout/Navbar"
 import Hero from "@/sections/Hero"
 import { Education } from "./sections/Education"
 import { Experience } from "./sections/Experience"
-import { Languages } from "./sections/Languages"
 import { Projects } from "./sections/Projects"
+import { Language } from "./sections/Language"
 
 export default function App() {
   return (
@@ -13,9 +13,9 @@ export default function App() {
       <main className="flex flex-col mx-auto px-10 gap-10 md:max-w-6xl py-20 pt-24">
         <Hero />
         <Experience />
-        <Education/>
-        <Languages />
         <Projects />
+        <Education/>
+        <Language />
       </main>
     </section>
   )

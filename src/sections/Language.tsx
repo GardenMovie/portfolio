@@ -1,3 +1,5 @@
+import { Languages } from "lucide-react";
+
 const languages = [
   { id: "en", name: "English", level: "C1", description: "Proficient" },
   { id: "pt", name: "Portuguese", level: "C2", description: "Native" },
@@ -5,10 +7,13 @@ const languages = [
   //   { id: "de", name: "German", level: "A1", description: "Beginner" },
 ];
 
-export function Languages() {
+export function Language() {
   return (
-    <section id="languages" className="space-y-6">
-      <h2 className="text-2xl font-semibold tracking-tight">Languages</h2>
+    <section id="language" className="space-y-6 scroll-mt-20">
+      <h2 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
+        <Languages className="w-6 h-6 text-muted" />
+        <span>Education</span>
+      </h2>
       <div className="flex gap-4">
         {languages.map((lang) => (
           <div key={lang.id} className="relative w-full">
