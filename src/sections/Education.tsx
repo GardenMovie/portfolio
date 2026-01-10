@@ -9,8 +9,8 @@ const education: EducationItem[] = [
     title: "Bachelor of Computer Science",
     institution: "Federal University of ABC (UFABC)",
     period: "2023 — 2028",
-    description:
-      "Core training in software development and computer science fundamentals, including algorithms and data structures, object-oriented design, database systems, and applied programming using Python and C#.",
+    // description:
+    //   "Core training in software development and computer science fundamentals, including algorithms and data structures, object-oriented design, database systems, and applied programming using Python and C#.",
     icon: GraduationCap,
   },
   {
@@ -18,8 +18,8 @@ const education: EducationItem[] = [
     title: "Bachelor of Science & Technology",
     institution: "Federal University of ABC (UFABC)",
     period: "2023 — 2028",
-    description:
-      "Interdisciplinary program with a strong foundation in mathematics, scientific reasoning, and quantitative analysis, emphasizing problem-solving across engineering, computing, and natural sciences.",
+    // description:
+    //   "Interdisciplinary program with a strong foundation in mathematics, scientific reasoning, and quantitative analysis, emphasizing problem-solving across engineering, computing, and natural sciences.",
     icon: GraduationCap,
   },
   {
@@ -27,8 +27,8 @@ const education: EducationItem[] = [
     title: "Technical Course in Web Development and Programming",
     institution: "Dom Bosco School",
     period: "2020 — 2022",
-    description:
-      "Introductory training in programming logic and web development fundamentals, including HTML, CSS, and JavaScript, with early exposure to interactive applications, basic game development, and digital media tools.",
+    // description:
+    //   "Introductory training in programming logic and web development fundamentals, including HTML, CSS, and JavaScript, with early exposure to interactive applications, basic game development, and digital media tools.",
     icon: Blocks,
   },
 ];
