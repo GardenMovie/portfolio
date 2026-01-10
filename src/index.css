@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-    --background: oklch(1 0 0);
+    --background: oklch(95.78% 0.0058 264.5);
     --foreground: oklch(0.141 0.005 285.823);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.141 0.005 285.823);

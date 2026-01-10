@@ -24,12 +24,12 @@ const links: IconLink[] = [
     label: "Email",
     icon: <Mail className="h-5 w-5" />,
   },
-  {
-    href: "/DodyCV.pdf",
-    label: "Resume",
-    icon: <FileText className="h-5 w-5" />,
-    download: "DodyCV.pdf"
-  },
+  // {
+  //   href: "/DodyCV.pdf",
+  //   label: "Resume",
+  //   icon: <FileText className="h-5 w-5" />,
+  //   download: "DodyCV.pdf"
+  // },
 ]
 
 export default function IconLinks() {
@@ -53,6 +53,21 @@ export default function IconLinks() {
           </a>
         </Button>
       ))}
+        <Button
+          key={"Download CV"}
+          variant="outline"
+          size="lg"
+          asChild
+          aria-label={"Download CV"}
+        >
+          <a
+            href={"/DodyCV.pdf"}
+            download={"DodyCV.pdf"}
+            rel="noopener noreferrer"
+          >
+            <FileText className="h-5 w-5" /> Resume
+          </a>
+      </Button>
     </div>
   )
 }
