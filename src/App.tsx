@@ -4,6 +4,7 @@ import Hero from "@/sections/Hero"
 import { Education } from "./sections/Education"
 import { Experience } from "./sections/Experience"
 import { Languages } from "./sections/Languages"
+import { Projects } from "./sections/Projects"
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Experience />
         <Education/>
         <Languages />
+        <Projects />
       </main>
     </section>
   )
