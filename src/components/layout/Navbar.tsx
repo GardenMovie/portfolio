@@ -1,5 +1,6 @@
 const links = [
   { label: "Home", href: "#home" },
+  { label: "Education", href: "#education" },
 ]
 
 export default function Navbar() {
