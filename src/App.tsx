@@ -9,18 +9,11 @@ export default function App() {
   return (
     <section className="min-h-screen overflow-x-hidden">
       <Navbar />
-      <main className="container mx-auto px-4">
+      <main className="flex flex-col mx-auto px-10 gap-10 md:max-w-6xl py-20 pt-24">
         <Hero />
-        <section className="md:min-h-[90vh] min-h-[50vh] flex justify-center flex-col-reverse xl:flex-row gap-x-16 gap-y-10">
-          {/* Left: Education + Languages, Right: Experience */}
-          <div className="flex flex-col gap-10 flex-1">
-            <Education />
-            <Languages />
-          </div>
-          <div className="flex-1">
-            <Experience />
-          </div>
-        </section>
+        <Experience />
+        <Education/>
+        <Languages />
       </main>
     </section>
   )
