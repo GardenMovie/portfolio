@@ -8,17 +8,14 @@ export default function Hero() {
       className="md:min-h-[70vh] min-h-[50vh] flex md:items-center justify-center flex-col-reverse md:flex-row gap-3 scroll-mt-20"
     >
       <div className="text-left space-y-2">
-
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">
           Hey! I'm <span className="text-primary">Dody</span> (Dod-gee)
         </h1>
 
-        <p className="text-3xl text-muted-foreground">
-        FullStack Developer
-        </p>
+        <p className="text-3xl text-muted-foreground">FullStack Developer</p>
 
         <p className="rounded-md bg-gray-500/10 font-medium p-2 inline-flex items-center space-x-2">
-          <MapPin className="h-4 w-4"/>
+          <MapPin className="h-4 w-4" />
           <span>São Paulo, Brazil</span>
         </p>
         <IconLinks />
