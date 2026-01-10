@@ -12,7 +12,7 @@ export function Language() {
     <section id="language" className="space-y-6 scroll-mt-20">
       <h2 className="text-2xl font-semibold tracking-tight flex items-center gap-2">
         <Languages className="w-6 h-6 text-muted" />
-        <span>Education</span>
+        <span>Languages</span>
       </h2>
       <div className="flex gap-4">
         {languages.map((lang) => (
