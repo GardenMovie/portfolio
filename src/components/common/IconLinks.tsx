@@ -27,7 +27,7 @@ const links: IconLink[] = [
   // {
   //   href: "/DodyCV.pdf",
   //   label: "Resume",
-  //   icon: <FileText className="h-5 w-5" /> Resume,
+  //   icon: <FileText className="h-5 w-5" />,
   //   download: "DodyCV.pdf"
   // },
 ]
@@ -62,7 +62,6 @@ export default function IconLinks() {
         >
           <a
             href={"/DodyCV.pdf"}
-            target="_blank"
             download={"DodyCV.pdf"}
             rel="noopener noreferrer"
           >

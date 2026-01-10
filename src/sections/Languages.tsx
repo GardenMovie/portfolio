@@ -1,6 +1,11 @@
 const languages = [
-  { id: "en", name: "English", level: "C1", description: "Native" },
-  { id: "pt", name: "Portuguese", level: "C2", description: "Fluent" },
+  { id: "en", name: "English", level: "C2", description: "Native" },
+  {
+    id: "pt",
+    name: "Portuguese",
+    level: "C2",
+    description: "Proficient (C2 - near-native)",
+  },
   //   { id: "de", name: "German", level: "A1", description: "Beginner" },
 ];
 
