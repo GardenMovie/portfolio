@@ -3,8 +3,13 @@ import Navbar from "@/components/layout/Navbar"
 import Hero from "@/sections/Hero"
 import { Education } from "./sections/Education"
 import { Experience } from "./sections/Experience"
+<<<<<<< HEAD
 import { Projects } from "./sections/Projects"
 import { Language } from "./sections/Language"
+=======
+import { Languages } from "./sections/Languages"
+import { Projects } from "./sections/Projects"
+>>>>>>> 76b8a19 (Feat: add project cards with details and stack to new section for projects)
 
 export default function App() {
   return (
@@ -15,7 +20,12 @@ export default function App() {
         <Experience />
         <Projects />
         <Education/>
+<<<<<<< HEAD
         <Language />
+=======
+        <Languages />
+        <Projects />
+>>>>>>> 76b8a19 (Feat: add project cards with details and stack to new section for projects)
       </main>
     </section>
   )
