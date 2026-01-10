@@ -1,15 +1,7 @@
 import { GraduationCap, Blocks } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import type { EducationItem } from "@/types";
+import { TimelineCard } from "@/components/common/TimelineCard";
 
-
-type EducationItem = {
-  id: string;
-  title: string;
-  institution: string;
-  period: string;
-  description?: string;
-  icon: React.ElementType;
-};
 
 const education: EducationItem[] = [
   {
@@ -52,39 +44,9 @@ export function Education() {
 
       {/* Education items */}
       <div className="grid gap-4">
-        {education.map((item) => {
-          const Icon = item.icon;
-
-          return (
-            <Card key={item.id}>
-              <CardContent className="flex items-center px-6 min-h-30">
-                <div className="flex gap-4">
-                {/* Icon */}
-                <div className="mt-1">
-                  <Icon className="h-6 w-6 text-muted-foreground" />
-                </div>
-
-                {/* Text content */}
-                <div className="space-y-1">
-                  <h3 className="font-medium leading-none">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-sm text-muted-foreground">
-                    {item.institution} • {item.period}
-                  </p>
-
-                  {item.description && (
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {item.description}
-                    </p>
-                  )}
-                </div>
-                </div>
-              </CardContent>
-            </Card>
-          );
-        })}
+        {education.map((item) => (
+          <TimelineCard key={item.id} item={item} />
+        ))}
       </div>
     </section>
   );
