@@ -24,7 +24,7 @@ function Card({
         data-slot="card"
         data-size={size}
         className={cn(
-          "relative w-full bg-gradient-to-br from-neutral-100 from-70% to-neutral-300 text-card-foreground gap-6 overflow-hidden rounded-xl text-sm shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col transition-transform duration-300",
+          "relative w-full bg-gradient-to-r from-neutral-100 from-70% to-neutral-200 text-card-foreground gap-6 overflow-hidden rounded-xl text-sm shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col transition-transform duration-300",
           hoverEffect && "group-hover/card-hover:-translate-x-1 group-hover/card-hover:-translate-y-1",
           className
         )}

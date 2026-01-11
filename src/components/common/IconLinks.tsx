@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 import { Github, Linkedin, Mail, FileText } from "lucide-react"
 
 type IconLink = {
@@ -32,23 +33,26 @@ const links: IconLink[] = [
   // },
 ]
 
-export default function IconLinks() {
+export default function IconLinks({ row = true }: { row?: boolean }) {
   return (
-    <div className="flex gap-3 justify-left">
-        <Button
-          key={"Download CV"}
-          variant="outline"
-          size="lg"
-          asChild
-          aria-label={"Download CV"}
+    <div className={cn(
+      "flex gap-3 justify-left",
+      row ? "flex-row" : "flex-col"
+    )}>
+      <Button
+        key={"Download CV"}
+        variant="outline"
+        size="lg"
+        asChild
+        aria-label={"Download CV"}
+      >
+        <a
+          href={"/DodyCV.pdf"}
+          download={"DodyCV.pdf"}
+          rel="noopener noreferrer"
         >
-          <a
-            href={"/DodyCV.pdf"}
-            download={"DodyCV.pdf"}
-            rel="noopener noreferrer"
-          >
-            <FileText className="h-5 w-5" /> Resume
-          </a>
+          <FileText className="h-5 w-5" /> Resume
+        </a>
       </Button>
       {links.map(link => (
         <Button

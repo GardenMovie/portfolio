@@ -1,9 +1,11 @@
+
 import Navbar from "@/components/layout/Navbar"
 import Hero from "@/sections/Hero"
 import { Education } from "./sections/Education"
 import { Experience } from "./sections/Experience"
 import { Projects } from "./sections/Projects"
 import { Language } from "./sections/Language"
+import AboutSimple from "./sections/AboutSimple";
 import "@/components/common/HeroGridBg.css";
 
 export default function App() {
@@ -17,6 +19,7 @@ export default function App() {
         <Projects />
         <Education/>
         <Language />
+        <AboutSimple />
       </main>
     </section>
   )

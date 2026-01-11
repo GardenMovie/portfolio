@@ -52,7 +52,7 @@ export function TimelineCard({ item }: TimelineCardProps) {
               {item.institution} • {item.period}
             </p>
             {item.description && (
-              <p className="text-sm leading-relaxed text-muted-foreground whitespace-pre-line border-l-2 border-primary pl-2">
+              <p className="text-sm font-medium leading-normal whitespace-pre-line border-l-2 border-primary pl-2">
                 {item.description}
               </p>
             )}
