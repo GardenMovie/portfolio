@@ -1,0 +1,13 @@
+/* Grid background for hero section */
+.hero-grid-blur {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-image:
+    repeating-linear-gradient(to right, rgba(76,79,105,0.15) 0 2px, transparent 2px 40px),
+    repeating-linear-gradient(to bottom, rgba(76,79,105,0.15) 0 2px, transparent 2px 40px);
+  filter: blur(4px);
+}

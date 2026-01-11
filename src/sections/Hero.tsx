@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="md:min-h-[70vh] min-h-[50vh] flex md:items-center justify-center flex-col-reverse md:flex-row gap-3 scroll-mt-20"
+      className="md:min-h-[100vh] flex md:items-center justify-center flex-col-reverse md:flex-row gap-3 scroll-mt-20"
     >
       <div className="text-left space-y-2">
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">

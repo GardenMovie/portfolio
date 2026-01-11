@@ -1,4 +1,5 @@
 import { Github, ExternalLink, FolderKanban } from "lucide-react";
+import { Card, CardContent, CardHeader } from "../components/ui/card";
 
 const projects = [
 	{
@@ -65,22 +66,18 @@ export function Projects() {
 		</h2>
 		<div className="grid gap-4 grid-cols-1 md:grid-cols-2">
 			{projects.map((project) => (
-					<div key={project.id} className="relative w-full h-80 group cursor-pointer">
-						<div
-							className="absolute inset-0 translate-x-1 translate-y-1 bg-primary rounded-xl z-0 shadow-lg transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"
-							aria-hidden="true"
-						/>
-						<div className="flex flex-col h-full bg-card rounded-xl relative z-10 bg-gradient-to-br from-neutral-100 from-70% to-neutral-300 overflow-hidden transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
+					<Card key={project.id} className="h-80 cursor-pointer" hoverEffect>
+						<div className="flex flex-col h-full">
 							{/* Image area: top */}
-							<div className="min-h-1/2 w-full bg-muted flex items-center justify-center overflow-hidden">
+							<CardHeader className="min-h-1/2 w-full bg-muted flex items-center justify-center overflow-hidden">
 								<img
 									src={project.image}
 									alt={project.title + " preview"}
 									className="object-cover w-full h-full"
 								/>
-							</div>
+							</CardHeader>
 							{/* Content area: bottom 2/3 */}
-							<div className="flex flex-col flex-1 gap-2 px-6 py-6 justify-between">
+							<CardContent className="flex flex-col flex-1 gap-2 px-6 py-6 justify-between">
 								<div>
 									<h3 className="font-bold text-lg leading-none">
 										{project.title}
@@ -109,9 +106,9 @@ export function Projects() {
 										<span>Deploy</span>
 									</a>
 								</div>
-							</div>
+							</CardContent>
 						</div>
-				</div>
+					</Card>
 			))}
 		</div>
 	</section>
