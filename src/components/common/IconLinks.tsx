@@ -35,6 +35,21 @@ const links: IconLink[] = [
 export default function IconLinks() {
   return (
     <div className="flex gap-3 justify-left">
+        <Button
+          key={"Download CV"}
+          variant="outline"
+          size="lg"
+          asChild
+          aria-label={"Download CV"}
+        >
+          <a
+            href={"/DodyCV.pdf"}
+            download={"DodyCV.pdf"}
+            rel="noopener noreferrer"
+          >
+            <FileText className="h-5 w-5" /> Resume
+          </a>
+      </Button>
       {links.map(link => (
         <Button
           key={link.label}
@@ -53,21 +68,6 @@ export default function IconLinks() {
           </a>
         </Button>
       ))}
-        <Button
-          key={"Download CV"}
-          variant="outline"
-          size="lg"
-          asChild
-          aria-label={"Download CV"}
-        >
-          <a
-            href={"/DodyCV.pdf"}
-            download={"DodyCV.pdf"}
-            rel="noopener noreferrer"
-          >
-            <FileText className="h-5 w-5" /> Resume
-          </a>
-      </Button>
     </div>
   )
 }
