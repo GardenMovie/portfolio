@@ -6,15 +6,17 @@ function Card({
   className,
   size = "default",
   hoverEffect = false,
+  shadowColor = "bg-primary",
   ...props
-}: React.ComponentProps<"div"> & { size?: "default" | "sm"; hoverEffect?: boolean; color?: string }) {
+}: React.ComponentProps<"div"> & { size?: "default" | "sm"; hoverEffect?: boolean; color?: string; shadowColor?: string }) {
   return (
     <div className={cn("relative", hoverEffect && "group/card-hover")}> 
       {/* Offset shadow card */}
       <div
         aria-hidden="true"
         className={cn(
-          "absolute inset-0 translate-x-1 translate-y-1 z-0 rounded-xl bg-primary shadow-lg transition-transform duration-300",
+          "absolute inset-0 translate-x-1 translate-y-1 z-0 rounded-xl shadow-lg transition-transform duration-300",
+          shadowColor,
           // call Card hoverEffect = true to enable this effect
           hoverEffect && "group-hover/card-hover:translate-x-2 group-hover/card-hover:translate-y-2",
         )}

@@ -2,18 +2,18 @@ import { Puzzle } from "lucide-react";
 import { Card } from "../components/ui/card";
 
 const skills = [
-  { name: "React.js", color: "#61dafb" },
-  { name: "TypeScript", color: "#3178c6" },
-  { name: "Tailwind CSS", color: "#38bdf8" },
-  { name: "Figma", color: "#a259ff" },
-  { name: "Docker", color: "#2496ed" },
-  { name: "Linux", color: "#fbc02d" },
-  { name: "Git", color: "#f14e32" },
-  { name: "Next.js", color: "#000000" },
-  { name: "Vite", color: "#646cff" },
-  { name: "Python", color: "#3776ab" },
-  { name: "C#", color: "#9b4f96" },
-  { name: "Playwright", color: "#45ba6a" },
+  { name: "React.js", color: "bg-cyan-400/60" }, 
+  { name: "TypeScript", color: "bg-blue-500/60" },
+  { name: "Tailwind CSS", color: "bg-sky-400/60" },
+  { name: "Figma", color: "bg-pink-500/60" }, 
+  { name: "Docker", color: "bg-sky-600/60" }, 
+  { name: "Linux", color: "bg-yellow-500/60" },
+  { name: "Git", color: "bg-red-500/60" },
+  { name: "Next.js", color: "bg-black/60" }, 
+  { name: "Vite", color: "bg-purple-400/60" },
+  { name: "Python", color: "bg-yellow-400/60" },
+  { name: "C#", color: "bg-violet-700/60" },
+  { name: "Playwright", color: "bg-green-600/60" },
 ];
 
 export default function Skills() {
@@ -27,7 +27,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <Card
             key={skill.name}
-            color={skill.color}
+            shadowColor={skill.color}
             className="flex items-center justify-center text-lg font-semibold p-6 min-h-[80px]"
           >
             <span className="relative z-10">{skill.name}</span>
