@@ -3,23 +3,25 @@ import { Card, CardContent, CardHeader } from "../components/ui/card";
 
 const projects = [
   {
-    id: "ufabc-braille-servos",
-    title: "Braille Display with Servos",
-    description:
-      "Arduino controlled braille display using servos and 3D printed parts, made at a course at UFABC",
-    github: "https://github.com/GardenMovie/ufabc-braille-servos",
-    deploy: "",
-    stack: [],
-    images: ["/projectPics/braille.jpeg"],
-  },
-  {
     id: "interantar-fragmentos-polares",
     title: "Interantar Fragmentos Polares",
     description: "Educational point-and-click game for young children",
     github: "https://github.com/GardenMovie/interantar-fragmentos-polares",
-    deploy: "",
+    deploy: "https://play.google.com/store/apps/details?id=com.interantar.fragmentospolares",
+    deployIsDownload: true,
     stack: [],
     images: ["/projectPics/fragmentos.png"],
+  },
+  {
+    id: "raycasting-engine",
+    title: "Raycasting Engine",
+    description:
+      "Web based game engine that uses raycasting to render 3D levels",
+    github: "https://github.com/GardenMovie/raycasting-engine",
+    deploy: "https://carmack-inc.github.io/raycasting-engine/",
+    deployIsDownload: false,
+    stack: [],
+    images: ["projectPics/raycasting.png"],
   },
   {
     id: "interantar-banquete-gelado",
@@ -27,6 +29,7 @@ const projects = [
     description: "Educational top-down adventure game for young children",
     github: "https://github.com/GardenMovie/interantar-banquete-gelado",
     deploy: "",
+    deployIsDownload: true,
     stack: [],
     images: ["/projectPics/banqueteGelado.png"],
   },
@@ -36,6 +39,7 @@ const projects = [
     description: "Educational Wordle-inspired game for young children",
     github: "https://github.com/GardenMovie/interantar-polaroo",
     deploy: "",
+    deployIsDownload: true,
     stack: [],
     images: [
       "projectPics/polaroo1.png",
@@ -44,14 +48,15 @@ const projects = [
     ],
   },
   {
-    id: "raycasting-engine",
-    title: "Raycasting Engine",
+    id: "ufabc-braille-servos",
+    title: "Braille Display with Servos",
     description:
-      "Web based game engine that uses raycasting to render 3D levels",
-    github: "https://github.com/GardenMovie/raycasting-engine",
+      "Arduino controlled braille display using servos and 3D printed parts, made at a course at UFABC",
+    github: "https://github.com/GardenMovie/ufabc-braille-servos",
     deploy: "",
+    deployIsDownload: false,
     stack: [],
-    images: ["projectPics/raycasting.png"],
+    images: ["/projectPics/braille.jpeg"],
   },
   // {
   // 	id: "portfolio",
@@ -124,16 +129,29 @@ export function Projects() {
                     <Github className="w-4 h-4" />
                     <span>GitHub</span>
                   </a>
-                  <a
-                    href={project.deploy}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <span>Deploy</span>
-                  </a>
+                  {project.deploy && !project.deployIsDownload && (
+                    <a
+                      href={project.deploy}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Deploy</span>
+                    </a>
+                  )}
+                  {project.deploy && project.deployIsDownload && (
+                    <a
+                      href={project.deploy}
+                      download
+                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Download</span>
+                    </a>
+                  )}
                 </div>
               </CardContent>
             </div>
