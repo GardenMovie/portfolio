@@ -40,7 +40,7 @@ A modern, responsive portfolio website built with React, Vite, TypeScript, Tailw
 
 ## 🌐 Deployment
 
-This website has been deployed on Vercel with CI/CD integrations from the beginning.
+This website has been deployed on [Vercel](https://dodygallerani.vercel.app) with CI/CD integrations from the beginning.
 
 ---
 
