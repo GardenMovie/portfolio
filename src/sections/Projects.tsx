@@ -63,6 +63,7 @@ export function Projects() {
 		<h2 className="text-2xl font-semibold mb-8 flex items-center gap-2">
 			<FolderKanban className="w-6 h-6 text-muted" />
 			<span>Projects</span>
+			{/* <span className="ml-5 -rotate-3 bg-gray-300 text-sm text-muted-foreground px-2 py-1 rounded-md">Click to open Github Repo</span> */}
 		</h2>
 		<div className="grid gap-4 grid-cols-1 md:grid-cols-2">
 			{projects.map((project) => (

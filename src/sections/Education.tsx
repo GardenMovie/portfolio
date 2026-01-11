@@ -44,7 +44,7 @@ export function Education() {
       </h2>
 
       {/* Education items */}
-      <div className="grid gap-4">
+      <div className="flex flex-col gap-4">
         {education.map((item) => (
           <TimelineCard key={item.id} item={item} />
         ))}
