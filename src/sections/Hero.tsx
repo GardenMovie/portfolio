@@ -17,7 +17,7 @@ export default function Hero() {
           Hey! I'm <span className="text-primary">Dody</span> (Dod-gee)
         </h1>
 
-        <p className="text-3xl text-muted-foreground">FullStack Developer</p>
+        <p className="text-3xl text-muted-foreground">Full-Stack Developer</p>
 
         <p className="rounded-md bg-gray-500/10 font-medium p-2 inline-flex items-center space-x-2">
           <MapPin className="h-4 w-4" />
