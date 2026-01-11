@@ -42,6 +42,7 @@ export default function IconLinks({ row = true }: { row?: boolean }) {
       <Button
         key={"Download CV"}
         variant="outline"
+        className="bg-primary text-primary-foreground hover:bg-blue-800 hover:text-primary-foreground"
         size="lg"
         asChild
         aria-label={"Download CV"}
