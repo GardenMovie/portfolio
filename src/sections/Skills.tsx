@@ -4,7 +4,7 @@ import { Card } from "../components/ui/card";
 const skills = [
   { name: "React.js", color: "bg-cyan-400/60" }, 
   { name: "TypeScript", color: "bg-blue-500/60" },
-  { name: "Tailwind CSS", color: "bg-sky-400/60" },
+  { name: "Tailwind", color: "bg-sky-400/60" },
   { name: "Figma", color: "bg-pink-500/60" }, 
   { name: "Docker", color: "bg-sky-600/60" }, 
   { name: "Linux", color: "bg-yellow-500/60" },
