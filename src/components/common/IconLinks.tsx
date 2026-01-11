@@ -36,7 +36,7 @@ const links: IconLink[] = [
 export default function IconLinks({ row = true }: { row?: boolean }) {
   return (
     <div className={cn(
-      "flex gap-3 justify-left",
+      "flex flex-wrap flex-col-1 gap-3 justify-left",
       row ? "flex-row" : "flex-col"
     )}>
       <Button
