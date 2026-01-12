@@ -1,4 +1,4 @@
-import { Briefcase, Terminal } from "lucide-react";
+import { Briefcase} from "lucide-react";
 import type { EducationItem } from "@/types";
 import { TimelineCard } from "@/components/common/TimelineCard";
 
