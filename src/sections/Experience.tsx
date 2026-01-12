@@ -3,19 +3,19 @@ import type { EducationItem } from "@/types";
 import { TimelineCard } from "@/components/common/TimelineCard";
 
 const education: EducationItem[] = [
-  {
-    id: "freelancer",
-    title: "Freelancer",
-    institution: "Web Development",
-    period: "2024 — Present",
-    description: 
-      `Delivered automation solutions, data analysis, and lead-generation landing pages for small businesses.
-      \n- Automated workflows and repetitive tasks using Python Playwright, saving hours of manual work, with improved accuracy.
-      - Built and deployed lead-generation landing pages for clients, generating 100s of qualified leads that turned into sales.
-      - Delivered actionable data analysis and automated reporting, increasing client conversion rates by 15%.
-      \nTechnologies used: Playwright, Python, TypeScript, React, Next.js`,
-    icon: Terminal,
-  },
+  // {
+  //   id: "freelancer",
+  //   title: "Freelancer",
+  //   institution: "Web Development",
+  //   period: "2024 — Present",
+  //   description: 
+  //     `Delivered automation solutions, data analysis, and lead-generation landing pages for small businesses.
+  //     \n- Automated workflows and repetitive tasks using Python Playwright, saving hours of manual work, with improved accuracy.
+  //     - Built and deployed lead-generation landing pages for clients, generating 100s of qualified leads that turned into sales.
+  //     - Delivered actionable data analysis and automated reporting, increasing client conversion rates by 15%.
+  //     \nTechnologies used: Playwright, Python, TypeScript, React, Next.js`,
+  //   icon: Terminal,
+  // },
   {
     id: "game-dev-interantar",
     title: "Game Developer",

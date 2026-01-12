@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[30vh] md:min-h-screen flex items-center justify-center md:flex-row flex-col gap-9 scroll-mt-20"
+      className="min-h-[30vh] md:mt-20 flex items-center justify-center md:flex-row flex-col gap-9 scroll-mt-20"
     >
       <img
         className="w-1/3 md:w-1/6 rounded-full md:mt-0 mt-20 ring-4 ring-primary"
