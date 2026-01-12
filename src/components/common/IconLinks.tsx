@@ -48,9 +48,9 @@ export default function IconLinks({ row = true }: { row?: boolean }) {
         aria-label={"Download CV"}
       >
         <a
-          href={"/DodyCV.pdf"}
-          download={"DodyCV.pdf"}
+          href={"https://drive.google.com/file/d/1yiavg7HA_3oU0BIDDDJaMDuJSmtNoPHW/view?usp=sharing/"}
           rel="noopener noreferrer"
+          target="_blank"
         >
           <FileText className="h-5 w-5" /> Resume
         </a>
