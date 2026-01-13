@@ -1,4 +1,4 @@
-import { Briefcase} from "lucide-react";
+import { Briefcase, Gamepad2} from "lucide-react";
 import type { EducationItem } from "@/types";
 import { TimelineCard } from "@/components/common/TimelineCard";
 
@@ -28,7 +28,7 @@ const education: EducationItem[] = [
  - Presented the team's projects at the Brazilian conference on Computers in Education (CBIE 2025), with 3 team games awarded.
 
 Technologies used: C#, Unity, Git, Google Workspace, Figma`,
-    icon: Briefcase,
+    icon: Gamepad2,
   },
 ];
 

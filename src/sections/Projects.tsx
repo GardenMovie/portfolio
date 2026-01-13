@@ -9,7 +9,7 @@ const projects = [
     github: "https://github.com/GardenMovie/interantar-fragmentos-polares",
     deploy: "https://play.google.com/store/apps/details?id=com.interantar.fragmentospolares",
     deployIsDownload: true,
-    stack: [],
+    stack: ["C#", "Unity"],
     images: ["/projectPics/fragmentos.png"],
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     github: "https://github.com/GardenMovie/raycasting-engine",
     deploy: "https://carmack-inc.github.io/raycasting-engine/",
     deployIsDownload: false,
-    stack: [],
+    stack: ["TypeScript", "React", "Next.js"],
     images: ["projectPics/raycasting.png"],
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     github: "https://github.com/GardenMovie/interantar-banquete-gelado",
     deploy: "",
     deployIsDownload: true,
-    stack: [],
+    stack: ["C#", "Unity"],
     images: ["/projectPics/banqueteGelado.png"],
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     github: "https://github.com/GardenMovie/interantar-polaroo",
     deploy: "",
     deployIsDownload: true,
-    stack: [],
+    stack: ["C#", "Unity"],
     images: [
       "projectPics/polaroo1.png",
       "projectPics/polaroo2.png",
@@ -55,7 +55,7 @@ const projects = [
     github: "https://github.com/GardenMovie/ufabc-braille-servos",
     deploy: "",
     deployIsDownload: false,
-    stack: [],
+    stack: ["Arduino", "CAD", "3D Printing"],
     images: ["/projectPics/braille.jpeg"],
   },
   // {
@@ -64,7 +64,7 @@ const projects = [
   // 	description: "",
   // 	github: "https://github.com/GardenMovie/portfolio",
   // 	deploy: "",
-  // 	stack: [],
+  // 	stack: ["TypeScript", "React", "Vite"],
   // 	images: ["https://placehold.co/400x100?text=Portfolio"],
   // },
 ];
@@ -118,40 +118,54 @@ export function Projects() {
                     {project.description}
                   </p>
                 </div>
-                <div className="flex justify-end gap-3 ">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3 py-2.5 rounded-md bg-(--chart-2) text-primary-foreground hover:bg-(--chart-2)/80 transition text-sm font-medium"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>GitHub</span>
-                  </a>
-                  {project.deploy && !project.deployIsDownload && (
+                <div className="flex justify-between items-end w-full mt-2">
+                  {/* Badges on the left */}
+                  <div className="flex gap-2">
+                    {project.stack && project.stack.length > 0 && project.stack.map((tech, idx) => (
+                      <span
+                        key={tech + idx}
+                        className="inline-flex items-center gap-2 px-3 py-2.5 rounded-md border-2 border-gray-600 bg-transparent text-black-700 text-sm font-medium select-none h-[40px]"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  {/* Link buttons on the right */}
+                  <div className="flex gap-3">
                     <a
-                      href={project.deploy}
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
+                      className="inline-flex items-center gap-2 px-3 py-2.5 rounded-md bg-(--chart-2) text-primary-foreground hover:bg-(--chart-2)/80 transition text-sm font-medium"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <ExternalLink className="w-4 h-4" />
-                      <span>Deploy</span>
+                      <Github className="w-4 h-4" />
+                      <span>GitHub</span>
                     </a>
-                  )}
-                  {project.deploy && project.deployIsDownload && (
-                    <a
-                      href={project.deploy}
-                      download
-                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      <span>Download</span>
-                    </a>
-                  )}
+                    {project.deploy && !project.deployIsDownload && (
+                      <a
+                        href={project.deploy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>Deploy</span>
+                      </a>
+                    )}
+                    {project.deploy && project.deployIsDownload && (
+                      <a
+                        href={project.deploy}
+                        download
+                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-(--chart-5) text-primary-foreground hover:bg-(--chart-5)/80 transition text-sm font-medium"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>Download</span>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </CardContent>
             </div>
