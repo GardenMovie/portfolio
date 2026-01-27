@@ -21,7 +21,7 @@ const projects = [
     deploy: "https://carmack-inc.github.io/raycasting-engine/",
     deployIsDownload: false,
     stack: ["TypeScript", "React", "Next.js"],
-    images: ["projectPics/raycasting.png"],
+    images: ["/projectPics/raycasting.png"],
   },
   {
     id: "interantar-banquete-gelado",
@@ -42,9 +42,9 @@ const projects = [
     deployIsDownload: true,
     stack: ["C#", "Unity"],
     images: [
-      "projectPics/polaroo1.png",
-      "projectPics/polaroo2.png",
-      "projectPics/polaroo3.png",
+      "/projectPics/polaroo1.png",
+      "/projectPics/polaroo2.png",
+      "/projectPics/polaroo3.png",
     ],
   },
   {

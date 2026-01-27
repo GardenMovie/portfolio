@@ -17,8 +17,8 @@ export function Language() {
 
       <div className="flex flex-col md:flex-row gap-4">
         {languages.map((lang) => (
-          <div className="relative w-full">
-            <Card key={lang.id} className="flex-1 min-w-0">
+          <div key={lang.id} className="relative w-full">
+            <Card className="flex-1 min-w-0">
               <CardContent>
                 <div className="flex items-center gap-4 py-3 w-full">
                   <span className="font-bold text-lg min-w-10 text-center">
