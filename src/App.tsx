@@ -6,7 +6,7 @@ import { Experience } from "./sections/Experience"
 import { Projects } from "./sections/Projects"
 import FullStackSkills from "./sections/Skills";
 import { Language } from "./sections/Language"
-import AboutSimple from "./sections/AboutSimple";
+import Footer from "./sections/Footer";
 import "@/components/common/HeroGridBg.css";
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
         <FullStackSkills />
         <Education/>
         <Language />
-        <AboutSimple />
+        <Footer />
       </main>
     </section>
   )
