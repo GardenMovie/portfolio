@@ -28,7 +28,7 @@ export function Projects() {
               }}
             >
               {/* Image area: top, maintain aspect ratio */}
-              <CardHeader className="aspect-[8/4] pt-3 px-3 w-full flex items-center justify-center overflow-hidden">
+              <CardHeader className="aspect-[2/1] pt-3 px-3 w-full flex items-center justify-center overflow-hidden">
                   {project.image && (
                     <img
                       src={project.image}
@@ -41,10 +41,10 @@ export function Projects() {
               {/* Content area: bottom */}
               <CardContent className="flex flex-col flex-1 px-3 pb-3">
                 <div className="">
-                  <h3 className="font-bold text-lg leading-none">
+                  <h3 className="font-bold text-xl leading-none">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground mt-1 mb-2">
+                  <p className="text-md text-muted-foreground mt-1 mb-2">
                     {project.description}
                   </p>
                 </div>
