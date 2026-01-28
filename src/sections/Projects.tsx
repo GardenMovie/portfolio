@@ -13,7 +13,7 @@ export function Projects() {
         {projects.map((project) => (
           <div className="h-full" key={project.id}>
             <Card
-              className="cursor-pointer h-full"
+              className="cursor-pointer "
               hoverEffect
               onClick={() => {
                 if (project.github) {
@@ -28,7 +28,7 @@ export function Projects() {
                 }
               }}
             >
-              <div className="flex flex-col h-full">
+              <div className="flex flex-col ">
                 {/* Image area: top, maintain aspect ratio */}
                 <CardHeader className="aspect-[8/4] p-3 w-full flex items-center justify-center overflow-hidden">
                   {project.images &&
