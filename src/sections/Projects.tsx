@@ -11,9 +11,8 @@ export function Projects() {
       </h2>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
         {projects.map((project) => (
-          <div className="ring-1" key={project.id}>
             <Card
-              className="cursor-pointer h-full"
+              className="cursor-pointer h-full flex flex-col"
               hoverEffect
               onClick={() => {
                 if (project.github) {
@@ -28,41 +27,38 @@ export function Projects() {
                 }
               }}
             >
-              <div className="h-full">
-                {/* Image area: top, maintain aspect ratio */}
-                <CardHeader className="aspect-[8/4] p-3 w-full flex flex-1 items-center justify-center overflow-hidden">
-                  {project.image && (
-                    <img
-                      src={project.image}
-                      alt={project.title + " preview"}
-                      className="object-cover rounded-md w-full h-full"
-                    />
-                  )}
-                </CardHeader>
-                {/* Content area: bottom */}
-                <CardContent className="flex flex-col flex-1 p-3 justify-between">
-                  <div>
-                    <h3 className="font-bold text-lg leading-none">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mt-1 mb-2">
-                      {project.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {project.stack && project.stack.length > 0 && project.stack.map((tech, idx) => (
-                      <span
-                        key={tech + idx}
-                        className="inline-flex items-center gap-2 px-3 py-2.5 rounded-md border-2 border-gray-600 bg-transparent text-black-700 text-center text-sm font-medium select-none h-[40px]"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </div>
+              {/* Image area: top, maintain aspect ratio */}
+              <CardHeader className="aspect-[8/4] pt-3 px-3 w-full flex items-center justify-center overflow-hidden">
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title + " preview"}
+                    className="object-cover rounded-md w-full h-full"
+                  />
+                )}
+              </CardHeader>
+              {/* Content area: bottom */}
+              <CardContent className="flex flex-col flex-1 px-3 pb-3">
+                <div className="">
+                  <h3 className="font-bold text-lg leading-none">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-1 mb-2">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {project.stack && project.stack.length > 0 && project.stack.map((tech, idx) => (
+                    <span
+                      key={tech + idx}
+                      className="inline-flex items-center gap-2 px-3 py-2.5 rounded-md border-2 border-gray-600 bg-transparent text-black-700 text-center text-sm font-medium select-none h-[40px]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
             </Card>
-          </div>
         ))}
       </div>
     </section>
