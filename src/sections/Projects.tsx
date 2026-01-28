@@ -1,4 +1,4 @@
-import { Github, ExternalLink, FolderKanban } from "lucide-react";
+import { FolderKanban } from "lucide-react";
 import { Card, CardContent, CardHeader } from "../components/ui/card";
 import { projects } from "@/data/projects";
 export function Projects() {
@@ -29,13 +29,14 @@ export function Projects() {
             >
               {/* Image area: top, maintain aspect ratio */}
               <CardHeader className="aspect-[8/4] pt-3 px-3 w-full flex items-center justify-center overflow-hidden">
-                {project.image && (
-                  <img
-                    src={project.image}
-                    alt={project.title + " preview"}
-                    className="object-cover rounded-md w-full h-full"
-                  />
-                )}
+                  {project.image && (
+                    <img
+                      src={project.image}
+                      alt={project.title + " preview"}
+                      className="object-cover rounded-md w-full h-full"
+                      loading="lazy"
+                    />
+                  )}
               </CardHeader>
               {/* Content area: bottom */}
               <CardContent className="flex flex-col flex-1 px-3 pb-3">

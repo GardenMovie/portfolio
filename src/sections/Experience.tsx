@@ -1,4 +1,4 @@
-import { Briefcase, Gamepad2} from "lucide-react";
+import { Briefcase } from "lucide-react";
 import { TimelineCard } from "@/components/common/TimelineCard";
 import { experience } from "@/data/experience";
 
