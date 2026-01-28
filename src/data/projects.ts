@@ -38,7 +38,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    image: "/projectPics/polaroo1.png",
+    image: "/projectPics/polaroo.png",
   },
   {
     id: "ufabc-braille-servos",
