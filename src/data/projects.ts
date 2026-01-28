@@ -7,7 +7,7 @@ export const projects = [
     deploy: "https://play.google.com/store/apps/details?id=com.interantar.fragmentospolares",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    images: ["/projectPics/fragmentos.png"],
+    image: "/projectPics/fragmentos.png",
   },
   {
     id: "raycasting-engine",
@@ -18,7 +18,7 @@ export const projects = [
     deploy: "https://carmack-inc.github.io/raycasting-engine/",
     deployIsDownload: false,
     stack: ["TypeScript", "React", "Next.js"],
-    images: ["/projectPics/raycasting.png"],
+    image: "/projectPics/raycasting.png",
   },
   {
     id: "interantar-banquete-gelado",
@@ -28,7 +28,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    images: ["/projectPics/banqueteGelado.png"],
+    image: "/projectPics/banqueteGelado.png",
   },
   {
     id: "interantar-polaroo",
@@ -38,11 +38,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    images: [
-      "/projectPics/polaroo1.png",
-      "/projectPics/polaroo2.png",
-      "/projectPics/polaroo3.png",
-    ],
+    image: "/projectPics/polaroo1.png",
   },
   {
     id: "ufabc-braille-servos",
@@ -53,7 +49,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: false,
     stack: ["Arduino", "CAD", "3D Printing"],
-    images: ["/projectPics/braille.jpeg"],
+    image: "/projectPics/braille.jpeg",
   },
   // {
   // 	id: "portfolio",
