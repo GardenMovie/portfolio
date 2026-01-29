@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui.
 
-![Portfolio Screenshot](docs/portfolio-screenshot.png)
+![Portfolio Screenshot](portfolio-screenshot.png)
 
 ## 🛠️ Design & Technology Choices
 
