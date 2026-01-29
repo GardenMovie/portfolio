@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ExternalLink } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -7,8 +8,9 @@ function Card({
   size = "default",
   hoverEffect = false,
   shadowColor = "bg-primary",
+  hasLink = false,
   ...props
-}: React.ComponentProps<"div"> & { size?: "default" | "sm"; hoverEffect?: boolean; color?: string; shadowColor?: string }) {
+}: React.ComponentProps<"div"> & { size?: "default" | "sm"; hoverEffect?: boolean; color?: string; shadowColor?: string; hasLink?: boolean }) {
   return (
     <div className={cn("relative", hoverEffect && "group/card-hover")}> 
       {/* Offset shadow card */}
@@ -34,6 +36,14 @@ function Card({
       >
         {/* Card content */}
         {props.children}
+        {hasLink && (
+          <div
+            className="absolute bottom-5 right-4 text-muted-foreground group-hover/card-hover:text-primary transition-colors"
+            aria-hidden="true"
+          >
+            <ExternalLink className="w-5 h-5" />
+          </div>
+        )}
       </div>
     </div>
   );
