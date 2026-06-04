@@ -28,12 +28,12 @@ export function Projects() {
               }}
             >
               {/* Image area: top, maintain aspect ratio */}
-              <CardHeader className="aspect-[2/1] pt-3 px-3 flex items-center justify-center overflow-hidden">
+              <CardHeader className="aspect-[1.6/1] p-3 flex items-center justify-center overflow-hidden">
                   {project.image && (
                     <img
                       src={project.image}
                       alt={project.title + " preview"}
-                      className="object-cover rounded-md w-full h-full"
+                      className="object-cover rounded-md w-full h-full ring-5 ring-foreground/30"
                       loading="lazy"
                       decoding="async"
                     />

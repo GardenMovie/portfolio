@@ -1,6 +1,8 @@
-import vigilisImg from "@/assets/projectPics/vigilisSpecula.png";
+//import vigilisImg from "@/assets/projectPics/vigilisSpecula.png";
+import vigilisImgLaptop from "@/assets/projectPics/vigilisSpeculaLaptop.png";
 import fragmentosImg from "@/assets/projectPics/fragmentos.png";
-import raycastingImg from "@/assets/projectPics/raycasting.png";
+//import raycastingImg from "@/assets/projectPics/raycasting.png";
+import raycastingImgLaptop from "@/assets/projectPics/raycastingImgLaptop.png";
 import banqueteImg from "@/assets/projectPics/banqueteGelado.png";
 import polarooImg from "@/assets/projectPics/polaroo.png";
 import brailleImg from "@/assets/projectPics/braille.jpeg";
@@ -14,7 +16,8 @@ export const projects = [
     deploy: "vigilis-specula.vercel.com",
     deployIsDownload: false,
     stack: ["MongoDB", "TypeScript", "Python"],
-    image: vigilisImg,
+    //image: vigilisImg,
+    image: vigilisImgLaptop,
   },
   {
     id: "interantar-fragmentos-polares",
@@ -35,7 +38,7 @@ export const projects = [
     deploy: "https://carmack-inc.github.io/raycasting-engine/",
     deployIsDownload: false,
     stack: ["TypeScript", "React", "Next.js"],
-    image: raycastingImg,
+    image: raycastingImgLaptop,
   },
   {
     id: "interantar-banquete-gelado",
