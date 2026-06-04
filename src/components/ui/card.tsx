@@ -28,7 +28,7 @@ function Card({
         data-slot="card"
         data-size={size}
         className={cn(
-          "relative w-full bg-gradient-to-br from-neutral-100 from-30% via-90% via-neutral-200 to-neutral-100 text-card-foreground gap-6 overflow-hidden rounded-xl text-sm shadow-xs ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col transition-transform duration-300",
+          "relative w-full bg-gradient-to-br from-neutral-100 from-30% via-90% via-neutral-200 to-neutral-100 text-card-foreground gap-6 overflow-hidden rounded-xl text-sm shadow-xs ring-1 ring-foreground/10 group/card flex flex-col transition-transform duration-300",
           hoverEffect && "group-hover/card-hover:-translate-x-1 group-hover/card-hover:-translate-y-1",
           className
         )}
@@ -53,10 +53,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-header"
-      className={cn(
-        "gap-1 rounded-t-xl group-data-[size=sm]/card:px-4 [.border-b]:pb-6 group-data-[size=sm]/card:[.border-b]:pb-4 group/card-header @container/card-header grid auto-rows-min items-start has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto]",
-        className
-      )}
+      className={cn("rounded-t-xl", className)}
       {...props}
     />
   );

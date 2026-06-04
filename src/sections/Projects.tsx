@@ -28,7 +28,7 @@ export function Projects() {
               }}
             >
               {/* Image area: top, maintain aspect ratio */}
-              <CardHeader className="aspect-[2/1] pt-3 px-3 w-full flex items-center justify-center overflow-hidden bg-gray-100">
+              <CardHeader className="aspect-[2/1] pt-3 px-3 flex items-center justify-center overflow-hidden">
                   {project.image && (
                     <img
                       src={project.image}
