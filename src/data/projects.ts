@@ -1,3 +1,10 @@
+import vigilisImg from "@/assets/projectPics/vigilisSpecula.png";
+import fragmentosImg from "@/assets/projectPics/fragmentos.png";
+import raycastingImg from "@/assets/projectPics/raycasting.png";
+import banqueteImg from "@/assets/projectPics/banqueteGelado.png";
+import polarooImg from "@/assets/projectPics/polaroo.png";
+import brailleImg from "@/assets/projectPics/braille.jpeg";
+
 export const projects = [
   {
     id: "vigilis",
@@ -7,7 +14,7 @@ export const projects = [
     deploy: "vigilis-specula.vercel.com",
     deployIsDownload: false,
     stack: ["MongoDB", "TypeScript", "Python"],
-    image: "/projectPics/vigilisSpecula.png",
+    image: vigilisImg,
   },
   {
     id: "interantar-fragmentos-polares",
@@ -17,7 +24,7 @@ export const projects = [
     deploy: "https://play.google.com/store/apps/details?id=com.interantar.fragmentospolares",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    image: "/projectPics/fragmentos.png",
+    image: fragmentosImg,
   },
   {
     id: "raycasting-engine",
@@ -28,7 +35,7 @@ export const projects = [
     deploy: "https://carmack-inc.github.io/raycasting-engine/",
     deployIsDownload: false,
     stack: ["TypeScript", "React", "Next.js"],
-    image: "/projectPics/raycasting.png",
+    image: raycastingImg,
   },
   {
     id: "interantar-banquete-gelado",
@@ -38,7 +45,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    image: "/projectPics/banqueteGelado.png",
+    image: banqueteImg,
   },
   {
     id: "interantar-polaroo",
@@ -48,7 +55,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: true,
     stack: ["C#", "Unity"],
-    image: "/projectPics/polaroo.png",
+    image: polarooImg,
   },
   {
     id: "ufabc-braille-servos",
@@ -59,7 +66,7 @@ export const projects = [
     deploy: "",
     deployIsDownload: false,
     stack: ["Arduino", "CAD", "3D Printing"],
-    image: "/projectPics/braille.jpeg",
+    image: brailleImg,
   },
   // {
   // 	id: "portfolio",
