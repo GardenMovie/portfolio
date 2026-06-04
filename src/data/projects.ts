@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: "vigilis",
+    title: "Vigilis",
+    description: "Monitoring System for server usage metrics",
+    github: "https://github.com/GardenMovie/vigilis",
+    deploy: "vigilis-specula.vercel.com",
+    deployIsDownload: false,
+    stack: ["MongoDB", "TypeScript", "Python"],
+    image: "/projectPics/vigilisSpecula.png",
+  },
+  {
     id: "interantar-fragmentos-polares",
     title: "Interantar Fragmentos Polares",
     description: "Educational point-and-click game for young children",
