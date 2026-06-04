@@ -21,7 +21,7 @@ const links: IconLink[] = [
     icon: <Linkedin className="h-5 w-5" />,
   },
   {
-    href: "mailto:dodygallerani@hotmail.com",
+    href: "mailto:dollerani.42@gmail.com",
     label: "Email",
     icon: <Mail className="h-5 w-5" />,
   },
@@ -48,7 +48,8 @@ export default function IconLinks({ row = true }: { row?: boolean }) {
         aria-label={"Download CV"}
       >
         <a
-          href={"https://drive.google.com/file/d/1yiavg7HA_3oU0BIDDDJaMDuJSmtNoPHW/view?usp=sharing/"}
+
+          href={"https://drive.google.com/file/d/1keLWX9n7s02zcnQ5Jjde9mfY0IbybJ1G/view?usp=drive_link"}
           rel="noopener noreferrer"
           target="_blank"
         >
