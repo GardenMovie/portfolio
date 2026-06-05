@@ -24,7 +24,8 @@ export default function Navbar() {
         >
           <a
             href={"#home"}
-            className="text-muted-foreground font-semibold hover:text-primary flex items-center"
+            className="text-muted-foreground hover:text-primary flex items-center"
+            style={{ fontFamily: "'Alex Brush', cursive", fontSize: "1.4rem" }}
             title="Home"
           >
             Gallerani.
