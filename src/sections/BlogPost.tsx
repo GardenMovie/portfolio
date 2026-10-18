@@ -21,16 +21,6 @@ export function BlogPost({ slug }: { slug: string }) {
           <div className="flex flex-col gap-4 leading-7 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:mt-4 [&_ul]:list-disc [&_ul]:pl-6 [&_a]:underline">
             <Markdown>{post.body}</Markdown>
           </div>
-          {post.linkedin && (
-            <a
-              href={post.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-8 text-sm text-muted-foreground hover:text-primary underline"
-            >
-              View on LinkedIn
-            </a>
-          )}
         </>
       ) : (
         <p>Post not found.</p>

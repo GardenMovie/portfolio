@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { Github, Linkedin, Mail, FileText } from "lucide-react"
+import { BookOpen, Github, Linkedin, Mail, FileText } from "lucide-react"
 
 type IconLink = {
   href: string
@@ -64,7 +64,7 @@ export default function IconLinks({ row = true }: { row?: boolean }) {
         aria-label={"Blog"}
       >
         <a href={"#/blog"}>
-          <FileText className="h-5 w-5" /> Where I yap
+          <BookOpen className="h-5 w-5" /> Where I yap
         </a>
       </Button>
       {links.map(link => (

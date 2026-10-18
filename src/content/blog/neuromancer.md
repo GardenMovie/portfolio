@@ -1,5 +1,5 @@
 ---
-title: Li Necromancer, me senti em casa
+title: Li Neuromancer, me senti em casa
 date: 2026-04-26T11:43:28
 linkedin: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7454133041284730880
 ---
