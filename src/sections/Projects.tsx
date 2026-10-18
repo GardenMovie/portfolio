@@ -27,7 +27,7 @@ export function Projects() {
                 }
               }}
             >
-              <CardContent className="grid grid-cols-2 gap-3 flex-1 p-3">
+              <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-1 p-3">
                 {/* Left (1/2): 16:9 image */}
                 <div className="col-span-1 aspect-video rounded-lg bg-gray-300 overflow-hidden">
                   {project.image && (
