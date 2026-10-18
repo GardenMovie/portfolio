@@ -49,7 +49,7 @@ export default function IconLinks({ row = true }: { row?: boolean }) {
       >
         <a
 
-          href={"https://drive.google.com/file/d/1keLWX9n7s02zcnQ5Jjde9mfY0IbybJ1G/view?usp=drive_link"}
+          href={"/DodyCV.pdf"}
           rel="noopener noreferrer"
           target="_blank"
         >
