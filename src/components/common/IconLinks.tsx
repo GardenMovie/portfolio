@@ -56,6 +56,17 @@ export default function IconLinks({ row = true }: { row?: boolean }) {
           <FileText className="h-5 w-5" /> Resume
         </a>
       </Button>
+      <Button
+        key={"Blog"}
+        variant="outline"
+        size="lg"
+        asChild
+        aria-label={"Blog"}
+      >
+        <a href={"#/blog"}>
+          <FileText className="h-5 w-5" /> Where I yap
+        </a>
+      </Button>
       {links.map(link => (
         <Button
           key={link.label}
