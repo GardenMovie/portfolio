@@ -34,7 +34,8 @@ export const projects = [
     title: "Raycasting Engine",
     description:
       "Web based game engine that uses raycasting to render 3D levels",
-    github: "https://github.com/GardenMovie/raycasting-engine",
+    //github: "https://github.com/GardenMovie/raycasting-engine",
+    github: "https://carmack-inc.github.io/raycasting-engine/",
     deploy: "https://carmack-inc.github.io/raycasting-engine/",
     deployIsDownload: false,
     stack: ["TypeScript", "React", "Next.js"],
